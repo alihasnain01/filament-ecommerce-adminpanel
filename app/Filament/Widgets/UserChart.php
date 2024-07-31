@@ -2,13 +2,13 @@
 
 namespace App\Filament\Widgets;
 
-use BezhanSalleh\FilamentShield\Traits\HasPageShield;
+use BezhanSalleh\FilamentShield\Traits\HasWidgetShield;
 use Filament\Widgets\ChartWidget;
 
 class UserChart extends ChartWidget
 {
 
-    use HasPageShield;
+    use HasWidgetShield;
 
     protected static ?string $heading = 'User Chart';
 

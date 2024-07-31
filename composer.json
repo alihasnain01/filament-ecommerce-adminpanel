@@ -12,6 +12,7 @@
         "bezhansalleh/filament-shield": "^3.1",
         "filament/filament": "^3.2.48",
         "guzzlehttp/guzzle": "^7.2",
+        "hasnayeen/themes": "^3.0",
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",

@@ -30,13 +30,6 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true
         ]);
 
-        $user =  \App\Models\User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'user@gmail.com',
-            'password' => Hash::make('password'),
-        ]);
-
-        $user->assignRole('user');
 
         // \App\Models\User::factory(10)->create();
 
