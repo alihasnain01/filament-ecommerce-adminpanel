@@ -58,8 +58,11 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+                \Hasnayeen\Themes\Http\Middleware\SetTheme::class
             ])
             ->plugins([
+                \Hasnayeen\Themes\ThemesPlugin::make()
+                    ->canViewThemesPage(fn () => auth()->user()?->is_admin),
                 FilamentShieldPlugin::make()
                     ->gridColumns([
                         'default' => 1,
